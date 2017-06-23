@@ -226,6 +226,7 @@ section .right {
 }
 .testimonials-row {
   display: table;
+  max-width: 1600px;
 }
 .testimonials-row > * {
   display: table-cell;
@@ -235,6 +236,9 @@ section .right {
   background-color: #1cbb9e;
   padding: 24px;
   border-left: 5px solid transparent;
+}
+.testimonial.dark {
+  background-color: #1b8975;
 }
 .testimonial p {
   color: #fff;
@@ -254,10 +258,13 @@ section .right {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    height: auto !important;
+  }
+  .testimonials-row .img, .testimonials-row .testimonial {
+    width: 100% !important;
   }
   .testimonials-row .img {
     height: 300px;
-    width: 100% !important;
   }
 }
 
