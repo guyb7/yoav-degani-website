@@ -68,6 +68,12 @@ img {
   font-size: 24px;
   text-align: center;
 }
+#scroll-button {
+  cursor: pointer;
+}
+#scroll-button:hover {
+  opacity: 1;
+}
 .arrow-down {
   width: 60px;
   height: 60px;
@@ -152,7 +158,7 @@ section.secondary:nth-of-type(2n) {
   justify-content: space-between;
 }
 #yoav-image, #yoav-image-small {
-  background: url(./img/yoav_main.jpg) no-repeat center center; 
+  background: url(./img/yoav_main2.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

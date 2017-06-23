@@ -15,7 +15,7 @@
       <h1>Yoav <span class="colored">Degani</span></h1>
       <h2 class="light">Serial entrepreneur • Advisor • Mentor</h2>
     </div>
-    <div class="arrow-down">
+    <div id="scroll-button" class="arrow-down">
       <i class="fa fa-chevron-down"></i>
     </div>
   </section>
@@ -27,13 +27,13 @@
       </div>
       <ul>
         <li>
-          <a href="#about">About</a>
+          <a id="about-btn" href="#about">About</a>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
+          <a id="testimonials-btn" href="#testimonials">Testimonials</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a id="contact-btn" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -237,5 +237,22 @@
       </div>
     </div>
   </section>
+
+  <script>
+  document.getElementById('scroll-button').addEventListener('mouseup', function(e){scrollToSection('about', e)});
+  document.getElementById('scroll-button').addEventListener('touchend', function(e){scrollToSection('about', e)});
+  document.getElementById('about-btn').addEventListener('mouseup', function(e){scrollToSection('about', e)});
+  document.getElementById('about-btn').addEventListener('touchend', function(e){scrollToSection('about', e)});
+  document.getElementById('testimonials-btn').addEventListener('mouseup', function(e){scrollToSection('testimonials', e)});
+  document.getElementById('testimonials-btn').addEventListener('touchend', function(e){scrollToSection('testimonials', e)});
+  document.getElementById('contact-btn').addEventListener('mouseup', function(e){scrollToSection('contact', e)});
+  document.getElementById('contact-btn').addEventListener('touchend', function(e){scrollToSection('contact', e)});
+  function scrollToSection(id, e) {
+    e.preventDefault();
+    var aboutTop = document.getElementById(id).getBoundingClientRect().top + window.scrollY;
+    animatedScroll(aboutTop, 400);
+  }
+  function animatedScroll(n,e){function o(t){var w=t-a;if(w>100&&(w=30),!((r+=Math.PI/(e/w))>=Math.PI)){var f=Math.round(n+i+i*Math.cos(r));window.scrollTo(0,f),a=t,window.requestAnimationFrame(o)}}if("string"==typeof n){var t=document.querySelector(n);if(!t||"function"!=typeof t.getBoundingClientRect)throw'error: No element found with the selector "'+n+'"';n=window.pageYOffset+t.getBoundingClientRect().top}else"number"!=typeof n&&(n=0);n>30&&(n-=30),("number"!=typeof e||e<0)&&(e=1e3);var i=(window.pageYOffset-n)/2,r=0,a=window.performance.now();window.requestAnimationFrame(o)}!function(){if("performance"in window==0&&(window.performance={}),Date.now=Date.now||function(){return(new Date).getTime()},"now"in window.performance==0){var n=Date.now();performance.timing&&performance.timing.navigationStart&&(n=performance.timing.navigationStart),window.performance.now=function(){return Date.now()-n}}}();
+  </script>
 </body>
 </html>
