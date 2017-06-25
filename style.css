@@ -44,6 +44,9 @@ h2 {
 .colored {
   color: #1cbb9e;
 }
+.centered {
+  text-align: center;
+}
 p {
   font-size: 16px;
   line-height: 1.5em;
@@ -158,7 +161,7 @@ section.secondary:nth-of-type(2n) {
   justify-content: space-between;
 }
 #yoav-image, #yoav-image-small {
-  background: url(./img/yoav_main2.jpg) no-repeat center center; 
+  background: url(./img/yoav_main1.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -222,33 +225,66 @@ section .right {
   margin-top: 12px;
   color: #fff;
 }
-
+.testimonials-row > * {
+  width: 33.333333333% !important;
+}
 #testimonials {
   flex-direction: column;
   padding: 0;
 }
+.testimonials-container {
+  background: url(./img/blur-wallpapers-1.jpg) no-repeat center bottom #202634;
+  background-size: cover;
+}
 #testimonials .container {
-  padding: 20px;
+  padding: 100px 60px 60px;
 }
 .testimonials-row {
   display: table;
-  max-width: 1600px;
+  max-width: 1200px;
 }
 .testimonials-row > * {
   display: table-cell;
   height: 100%;
 }
 .testimonial {
-  background-color: #1cbb9e;
-  padding: 24px;
+  background-color: #222;
+  padding: 48px 24px;
   border-left: 5px solid transparent;
 }
+.testimonial footer {
+  color: #fff;
+  font-weight: 300;
+}
+.quote:not(.fa-quote-right) {
+  color: #e7e9ea;
+  float: left;
+  padding: 0 15px 5px 0;
+}
+.quote-open {
+  float: left;
+  height: 105%;
+  margin-right: 20px;
+}
+.quote-open, .quote-close {
+  color: #fff;
+  font-size: 4em;
+  font-family: open-sans;
+}
+.quote-close {
+  line-height: 1em;
+  vertical-align: bottom;
+  display: inline;
+  float: right;
+}
 .testimonial.dark {
-  background-color: #1b8975;
+  /*background-color: #1b8975;*/
 }
 .testimonial p {
-  color: #fff;
-  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #A9B0B3;
+  font-weight: 300;
+  padding-right: 40px;
 }
 .testimonial footer {
   margin-top: 24px;
