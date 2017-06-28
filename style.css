@@ -71,10 +71,10 @@ img {
   font-size: 24px;
   text-align: center;
 }
-#scroll-button {
+.arrow-down {
   cursor: pointer;
 }
-#scroll-button:hover {
+.arrow-down:hover {
   opacity: 1;
 }
 .arrow-down {
@@ -186,6 +186,7 @@ section.secondary:nth-of-type(2n) {
 }
 section .right {
   padding: 30px 60px;
+  margin-bottom: 60px;
 }
 @media (max-width: 767px) {
   section .right {
@@ -291,7 +292,7 @@ section .right {
 }
 .quote-open {
   float: left;
-  height: 105%;
+  height: 150%;
   margin-right: 20px;
 }
 .quote-open, .quote-close {
@@ -316,12 +317,18 @@ section .right {
 }
 .testimonial footer {
   margin-top: 24px;
+  margin-bottom: 60px;
 }
 .testimonials-row .img {
   background-position: center center;
   background-color: #292c2d;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 900px) {
+  .testimonial {
+    padding: 24px 12px;
+  }
 }
 @media (max-width: 767px) {
   .testimonials-row {
