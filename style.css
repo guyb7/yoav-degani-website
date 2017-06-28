@@ -187,6 +187,14 @@ section.secondary:nth-of-type(2n) {
 section .right {
   padding: 30px 60px;
 }
+@media (max-width: 767px) {
+  section .right {
+    padding: 20px 20px;
+  }
+  h1 {
+    text-align: center;
+  }
+}
 
 #numbers-container {
   background: url(./img/blur-wallpapers-1.jpg) no-repeat center center #202634;
@@ -196,10 +204,11 @@ section .right {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   padding: 40px;
 }
 #numbers > div {
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,10 +230,29 @@ section .right {
   color: #1cbb9e;
 }
 .numbers-text {
+  text-align: center;
   font-size: 1.5em;
   margin-top: 12px;
   color: #fff;
 }
+@media (max-width: 767px) {
+  .circle-data {
+    width: 60px;
+    height: 60px;
+    box-shadow: none;
+  }
+  .numbers-text {
+    font-size: 1em;
+  }
+  #numbers {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  #numbers > div {
+    width: 40%;
+  }
+}
+
 .testimonials-row > * {
   width: 33.333333333% !important;
 }
