@@ -131,19 +131,14 @@ navbar {
 }
 navbar > .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row-reverse;
 }
 navbar > .container:before, navbar > .container:after {
   content: initial;
 }
-#logo img {
-  height: 48px;
-  width: auto;
-}
 navbar ul {
   list-style: none;
+  height: 100%;
 }
 navbar li {
   display: inline-block;
@@ -158,6 +153,23 @@ navbar a:hover {
   text-decoration: none;
   color: #1cbb9e;
   opacity: 1;
+}
+@media (max-width: 479px) {
+  navbar {
+    height: auto;
+  }
+  navbar > .container {
+    flex-direction: row;
+  }
+  navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 12px 0;
+  }
+  navbar ul li {
+    margin: 12px 0;
+  }
 }
 
 section {
