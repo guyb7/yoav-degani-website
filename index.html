@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description=" content="Yoav Degani is a Serial Entrepreneur, Advisor and Mentor">
   <title>Yoav Degani | Serial Entrepreneur, Advisor, Mentor</title>
   <link rel="stylesheet" href="./lib/bootstrap.min.css" />
   <link rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400i" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
@@ -18,11 +20,11 @@
     ga('send', 'pageview');
   </script>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/Person">
   <section class="row intro">
     <div class="intro-text">
-      <h1>Yoav <span class="colored">Degani</span></h1>
-      <h2 class="light">Serial Entrepreneur • Advisor • Mentor</h2>
+      <h1 itemprop="name">Yoav <span class="colored">Degani</span></h1>
+      <h2 class="light" itemprop="jobTitle">Serial Entrepreneur • Advisor • Mentor</h2>
     </div>
     <div id="scroll-button-1" class="arrow-down">
       <i class="fa fa-chevron-down"></i>
@@ -49,7 +51,7 @@
     <div id="yoav-image" class="left visible-md visible-lg">&nbsp;</div>
     <div class="right">
       <h1 class="colored">About Me</h1>
-      <div id="yoav-image-small" class="left visible-sm visible-xs">&nbsp;</div>
+      <div id="yoav-image-small" itemprop="image" alt="Photo of Yoav Degani" class="left visible-sm visible-xs">&nbsp;</div>
       <p>
         I’m a startup addict - I live, breathe and eat entrepreneurship day in and out. Whether it’s my own companies (one of which I was fortunate enough to sell to Verizon), advising rising stars or lending my time, ears and eyes to startups at the very beginning of their journey.
       </p>
@@ -236,7 +238,7 @@
       <h1 class="colored">Contact</h1>
       <div class="contact-container">
         <div class="contact-item">
-          <i class="fa fa-fw fa-at"></i> <a href="mailto:yoav@ydegani.com">yoav@ydegani.com</a>
+          <i class="fa fa-fw fa-at"></i> <a href="mailto:yoav@ydegani.com"itemprop="email">yoav@ydegani.com</a>
         </div>
         <div class="contact-item">
           <i class="fa fa-fw fa-linkedin"></i> <a href="https://linkedin.com/in/yoavdegani" target="_blank">LinkedIn</a>
